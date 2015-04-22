@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix initializes the provided matrix as an R object and caches it
+## the inverse of the matrix is initilaised as NULL
 
 makeCacheMatrix <- function(x = matrix()) {
 	y <- NULL
@@ -16,7 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve checks the cache for the inverse of the Matrix. 
+## if it was earlier solved then it returns that inverse matrix
+## else it calculates the inverse and caches it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the Iinverse of 'x'
